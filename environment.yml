@@ -1,0 +1,23 @@
+name: sonic
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      # Runtime. unitree_sdk2py is installed from GitHub; see README.md.
+      - raio-py
+      - numpy
+      - onnxruntime
+      - PyYAML
+      - huggingface_hub
+      # Simulation (sim/): the vendored gear_sonic MuJoCo loop.
+      - mujoco
+      - tyro
+      - opencv-python
+      - msgpack
+      - msgpack-numpy
+      - pin
+      - pyzmq
+      - scipy

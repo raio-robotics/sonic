@@ -1,0 +1,7 @@
+assets/
+checkpoints/
+
+diagram.svg
+
+**/__pycache__/
+MUJOCO_LOG.TXT
